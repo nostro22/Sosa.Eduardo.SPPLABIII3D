@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+    <!-- <link id="style" rel="stylesheet" href="./style/mainStyle.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Primer Parcial tema 5</title>
+</head>
+
+<body class="bg-image"
+    style="background-image: url(./img/fondolindo.jpg); background-size:cover; background-repeat: no-repeat;">
+
+
+    <main>
+        <header
+            class="d-flex  flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-info">
+            <div class="d-flex flex-column justify-content-center align-items-center mx-5">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="./img/logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top bg-warning">
+                </a>
+                <h1 class="d-flex text-warning mb-0">Pets®</h1>
+                <span class="text-light">(Mascotas que dan gusto)</span>
+            </div>
+
+            <ul class="nav col-12 col-md-auto  justify-content-center flex-column mb-md-0 mx-5  ">
+                <li><a href="./admin.html" class="nav-link px-2  p-0 text-light link-secondary">Administracion</a></li>
+                <li><a href="./index.html" class="nav-link p-0 px-2 text-light link-dark">Anuncios</a></li>
+                <li><a href="#" class="nav-link px-2 text-light p-0 link-dark">Blog</a></li>
+                <li><a href="#" class="nav-link px-2 text-light p-0 link-dark">Contacto</a></li>
+            </ul>
+        </header>
+
+        <div class="justify-content-center d-flex h-100" id="spinner"></div>
+        <div class="container col-10 " id="anunciosDinamicos"></div>
+        
+        </form>
+    </main>
+
+    <div class="container">
+        <h2 class="text-light text-capitalize fw-bold">Venta y adopcion de Mascotas</h2>
+    </div>
+
+    <!-- Boostrap javascript Bundle with Popper desde CDN -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/index.js" type="module"></script>
+
+</body>
+
+</html>

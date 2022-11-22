@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Permanent+Marker&display=swap');
+
+fieldset.scheduler-border {
+    border: solid 1px #DDD !important;
+    padding: 0 10px 10px 10px;
+    border-bottom: none;
+}
+
+legend.scheduler-border {
+    width: auto !important;
+    border: none;
+    font-size: 14px;
+}
+
+fieldset {
+    padding: 5%;
+}
+
+#frm_altaAnuncios {
+    width: 80%;
+    min-width: 2rem;   
+    margin: auto;
+    text-align: left;
+    font-family: 'Lato';
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.input_caracteristicas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+/* @media (max-width: 600px) {
+
+    .caracteristicas {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
+        
+
+    }
+    .input {
+        width: 185px;
+        min-height: 1rem;
+    }
+    fieldset{
+        width: 200px;
+        overflow: auto;
+
+    }
+    h1{
+        font-size: small;
+        width: 200px;  
+        margin-left: 50px;   
+
+    }
+} */
+
+.input_element {
+    display: flex;
+    align-items: center;
+    height: 2vw;
+    margin: 0 1rem 0 1rem;
+}
+
+div input {
+    min-width: 6rem;
+    overflow-x: hidden;
+}
+.input_element :hover {
+    cursor: text;
+}
+
+.radio input, .radio label{    
+    width: 2rem;
+    display:inline-block; 
+    margin:0 50px 0 0px; 
+}
+input {
+    width: 100%;
+    border-radius: 0.8em;
+    background-color: gainsboro;
+    border: none;
+    min-height: 1rem;
+}
+
+
+
+
+table {
+    color: aliceblue;
+    font-weight: bold;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+tr:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+#spinner {
+    margin: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+thead {
+    background-color: lightseagreen;
+}
+
+.colorPar {
+    background-color: lightseagreen;
+}
+
+.colorImpar {
+    background-color: lightblue;
+}
+
+/*
+header
+*/
+
+
+
+.fotoRelacionada_container img{
+    width:100%;
+    object-fit:cover;
+    height: 100%;    
+}
+
+footer{
+    margin-top: 25px;
+}
+
+#titulo{
+margin: 25px 0 25px;
+}
+/*
+header end
+*/
+
+i{
+    margin: 0 1rem 0 1rem;
+}
+
+
+
+/*
+Vallidaciones
+*/
+.inputError {
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+  }
+  .inputOk {
+    border: 1px solid green;
+    box-shadow: 0 0 5px green;
+  }
+  
+  .danger {
+    color: red;
+    font-weight: bold;
+  }
+  
+  small {
+    display: block;
+  }
+  .anuncio{
+    display: flex;
+    color: aliceblue;
+    font-weight: bolder;
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(223, 66, 66);
+}
+  
+ 

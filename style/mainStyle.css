@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Permanent+Marker&display=swap');
+
+html,
+body {
+    display: flex;
+    font-family: 'Lato';
+    flex-direction: column;  
+}
+.anuncio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 250px;
+    width: 30%;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: rgb(6, 68, 68);
+}
+.card-text
+{
+    color: aliceblue;
+    font-weight: bolder;
+}
+.card-head{
+    color: aliceblue;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    margin-top: 15px;
+}
+.card-head>div{
+    display: flex;
+    
+    color: aliceblue;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    margin-top: 15px;
+}
+.card-body{
+    color: aliceblue;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    margin-top: 15px;
+}
+.card-footer{
+    color: aliceblue;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    margin-top: 15px;
+}
+.botonAnuncio{
+    background-color: #017fe5;
+    display: flex;
+    margin-top: 25px;
+}
+
+
+
+body{
+    background-image: url("../img/fondolindo.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+div h2 {
+    
+    color: white;
+    margin: 1rem;
+    visibility: visible;
+    font-size: xx-large;
+}
+
+form{
+    visibility: hidden;
+    height: 0%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    
+    .anuncio{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        max-height: 300px;
+        width: 30%;
+        background-color: rgb(6, 68, 68);
+    }
+    
+    #anunciosDinamicos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        min-width: 600px;
+        background-color: #017fe5;
+        margin: auto;
+        margin-top: 20px;
+        overflow-y: scroll;
+    }
+
+
+    .card-text
+    {
+        color: aliceblue;
+        font-weight: bolder;
+    }
+    .card-head{
+        color: aliceblue;
+        justify-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+    .card-head>div{
+        display: flex;
+        
+        color: aliceblue;
+        width: 100%;
+        height: 30%;
+        flex-wrap: wrap;
+        
+    }
+    .card-body{
+        color: aliceblue;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 11px;
+        margin-top: 15px;
+        height: 30%;
+
+    }
+    .card-footer{
+
+        height: 30%;
+
+        color: aliceblue;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    .botonAnuncio{
+        display: flex;
+        margin-top: 25px;
+    }
+    
+}
+
+
+button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 700;
+    border: none;
+    border-radius: 1em;
+}
+
+button:active {
+    filter: brightness(80%);
+}
+
+
+#spinner {
+    margin: auto;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0%;
+    width: 0%;
+}
+
+
+
+.colorPar {
+    background-color: lightseagreen;
+}
+
+.colorImpar {
+    background-color: lightblue;
+}
+
+/*
+header
+*/
+
+
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#derechos{
+    justify-self: auto;
+    color: white;
+    font-size: small;
+}
+
+#logoBox {
+    background-color: aqua;
+    height: 40%;
+}
+
+#logoBox>img {
+    height: 100%;
+}
+
+
+
+#titleBox {
+    height: 30%;
+    background-color: red;
+}
+
+#titleBox p {
+    font-size: 100%;
+    margin: 0;
+}
+
+#box3 {
+    height: 30%;
+
+    background-color: aqua;
+}
+
+.middle-column {
+    flex-direction: column;
+    height: 10vh;
+    width: 10vw;
+
+}
+
+nav div {
+    width: 25vw;
+    max-width: 200px;   
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+p {
+    color: white;
+    text-transform: uppercase;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 10vw;
+    height: 4rem;
+    font-size: small;
+    max-width: 100px;
+    max-height: 20px;
+    border: aquamarine;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    color: #017fe5;
+    background-color: rgb(141, 201, 181);
+    text-decoration: none;
+}
+
+
+footer{
+    margin-top: 25px;
+    visibility: hidden;
+    height: 0%;
+}
+footer nav  ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo{
+margin: 25px 0 25px;
+visibility: hidden;
+}
+/*
+header end
+*/
+
+
+#anunciosDinamicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+    min-width: 600px;
+    background-color: #017fe5 ;
+    margin: auto;
+    margin-top: 20px;
+    overflow-y: scroll;
+
+}
+

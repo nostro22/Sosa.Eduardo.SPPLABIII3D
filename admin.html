@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/adminStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="./scripts/admin.js" type="module" ></script>
+
+    <title>Primer Parcial tema 5</title>
+</head>
+
+<body class="h-100 ">
+
+    <main>
+
+        <header
+            class="d-flex  flex-wrap align-items-center justify-content-center justify-content-between py-3 mb-4 border-bottom bg-info">
+            <div class="d-flex flex-column justify-content-center align-items-center px-5">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="./img/logo.png" alt="Logo" width="35" height="35"
+                        class="rounded-2 d-inline-block align-text-top bg-warning">
+                </a>
+                <h1 class="d-flex text-warning mb-0">
+                    Pets®
+                </h1>
+                <span class="text-light">(Mascotas que dan gusto)</span>
+            </div>
+
+            <ul class="nav  col-md-auto  justify-content-center flex-column mb-md-0 mx-5  ">
+                <li><a href="#" class="nav-link px-2  p-0 text-light link-secondary">Administracion</a></li>
+                <li><a href="./index.html" class="nav-link p-0 px-2 text-light link-dark">Anuncios</a></li>
+                <li><a href="#" class="nav-link px-2 text-light p-0 link-dark">Blog</a></li>
+                <li><a href="#" class="nav-link px-2 text-light p-0 link-dark">Contacto</a></li>
+            </ul>
+        </header>
+
+
+
+        <div id="anunciosDinamicos" style="display: flex;">
+        </div>
+
+        <h1 id="titulo">Administracion</h1>
+
+        <div class="d-flex  w-100 ">
+
+            <img class="img-fluid w-100" height="100px" src="./img/perro.jpg" alt="fotoRelacionada">
+        </div>
+
+        <form id="frm_altaAnuncios">
+            <fieldset class="bg-secondary bg-opacity-50 p-5 rounded-2 mt-5">
+                <legend>Información Del Anuncio</legend>
+                <div class="input">
+                    <label for="txt_titulo">Título:</label>
+                    <input type="text" id="txt_titulo" name="titulo" placeholder="Título">
+                    <small></small>
+                </div>
+                <div class="input">
+                    <label>Animal:</label>
+                    <div class="radio">
+                        <label for="rdo_perro">Perro:</label>
+                        <input type="radio" name="transaccion" id="rdo_perro" value="perro">
+                        <small></small>
+                        <label for="rdo_gato">Gato:</label>
+                        <input type="radio" name="transaccion" id="rdo_gato" value="gato">
+                        <small></small>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="txt_descripcion">Descripcion:</label>
+                    <input type="text" id="txt_descripcion" name="descripcion" placeholder="Descripcion">
+                    <small></small>
+                </div>
+                <div class="input">
+                    <label for="txt_precio">Precio</label>
+                    <input type="number" name="precio" min="0" max="50000" step="0.01" id="txt_precio" placeholder="Precio">
+                    <small></small>
+                </div>
+
+                <div class="d-flex flex-row mt-3 overflow-auto gap-5 ">
+                    <div class="d-flex flex-row ">
+                        <label class="input_element m-0 " for="txt_raza"><i class="material-icons m-0">pets</i></label>
+                        <input class="input_element  h-100" maxlength="25" type="text" name="raza" id="txt_raza"
+                            placeholder="Raza">
+                        <small></small>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <label class="input_element m-0 " for="txt_fecha"><i
+                                class="material-icons m-0">cruelty_free</i></label>
+                        <input class="input_element  h-100" type="date" name="fecha" id="txt_fecha"
+                            placeholder="dd/mm/aaaa">
+                        <small></small>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <label class="input_element  m-0" for="txt_vacuna"><i
+                                class="material-icons m-0">vaccines</i></label>
+                        <select class="input_element btn btn-secondary h-100" name="vacunas" id="txt_vacuna">
+                            <option value="" disabled selected hidden>---Elegir--</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                        </select>
+                        <small></small>
+                    </div>
+                </div>
+            </fieldset>
+
+
+
+            <div class="botones mt-2 mb-5">
+                <button class="alta btn btn-success fw-bold" type="submit" id="btn_form" name="btn_editar">
+                    <div>
+                        <i class="material-icons">save</i>
+                        <span>Guardar</span>
+                    </div>
+                </button>
+                <button class="btn btn-warning text-light fw-bold" type="reset" id="btn_reset " name="btn_reset">
+                    <div>
+                        <i class="material-icons text-light ">brush</i>
+                        <span>Limpiar</span>
+                    </div>
+                </button>
+                <button type="button" class="hidden btn btn-danger text-light fw-bold" id="btn_eliminar "
+                    name="btn_eliminar">
+                    <div>
+                        <i class="material-icons">delete</i>
+                        <span>Eliminar</span>
+                    </div>
+                </button>
+                <button type="button" class="hidden btn btn-info text-light fw-bold" id="btn_cancelar"
+                    name="btn_cancelar">
+                    <div>
+                        <i class="material-icons">clear</i>
+                        <span>Cancelar</span>
+                    </div>
+                </button>
+
+                <div class="justify-content-center d-flex h-100" id="spinner"></div>
+            </div>
+
+
+            <!-- FILTRO transaccion Tabla -->
+            <fieldset id="#contenedor-filtros-check"
+                class="bg-secondary overflow-auto bg-opacity-50 p-5  rounded-2  d-flex flex-row justify-content-between align-items-center">
+
+                <div class="input-group-addon input-group-button col-4 ">
+                    <label class="" for="select-transaccion">FILTRAR TRANSACCIONES</label>
+                    <select class=" mt-2  btn btn-secondary w-100 h-75" name="tipo_Transacion" id="select-transaccion">
+                        <option value="todos" selected>TODAS</option>
+                        <option value="perro">PERRO</option>
+                        <option value="gato">GATO</option>
+                    </select>
+                    <small></small>
+                </div>
+                <div class="input-group-addon col-4  input-group-button">
+                    <label class="" for="txt_promedio">PROMEDIO</label>
+                    <input readonly="true" class=" mt-2 m-0" maxlength="25" type="text" name="promedio"
+                        id="txt_promedio" placeholder="PROMEDIO">
+                </div>
+            </fieldset>
+
+            <!-- Filtros Checkbox Tabla -->
+            <div
+                class="d-flex bg-info justify-content-center p-5 overflow-auto">
+                <div class="row row-cols-1 row-cols-md-6 gap-4 m-0 justify-content-center">
+
+                    <div>
+                        <div class="form-check form-switch flex-column ">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroId" id="checkId"
+                                checked>
+                            <label class="form-check-label text-light fw-bold" for="checkId">
+                                ID
+                            </label>
+                        </div>
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroTitulo"
+                                id="checkTitulo" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkTitulo">
+                                TITULO
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroTransaccion"
+                                id="checkTransacciones" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkTransacciones">
+                                TRANSACCIONES
+                            </label>
+                        </div>
+
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroDescripcion"
+                                id="checkDescripcion" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkDescripcion">
+                                DESCRIPCION
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroPrecio"
+                                id="checkPrecio" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkPrecio">
+                                PRECIO
+                            </label>
+                        </div>
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroRaza"
+                                id="checkRaza" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkRaza">
+                                RAZA
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroFecha"
+                                id="checkFecha" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkFecha">
+                                FECHA
+                            </label>
+                        </div>
+                        <div class="form-check form-switch flex-column">
+                            <input class="form-check-input m-0" type="checkbox" value="" name="filtroVacuna"
+                                id="checkVacuna" checked>
+                            <label class="form-check-label text-light fw-bold" for="checkVacuna">
+                                VACUNA
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <span class="anuncio hidden"></span>
+            </div>
+            <div class="table-responsive" id="listado"></div>
+        </form>
+    </main>
+
+    <div>
+        <h2>Venta y adopcion de Mascotas</h2>
+    </div>
+    <footer class=" py-3 bg-info">
+        <nav class="navbar text-light navbar-expand-lg bg-info col-12 m-0 p-0 justify-content-between">
+            <ul class="navbar-nav col-12 justify-content-evenly flex-row col-5">
+                <li class="nav-item "><a class="link-secondary text-light nav-link" nav-link active href="">Nosotros</a>
+                </li>
+                <li class="nav-item "><a class="link-secondary text-light nav-link" nav-link active
+                        href="./index.html">Anuncios</a></li>
+                <li class="nav-item "><a class="link-secondary text-light nav-link" nav-link active href="">Blog</a>
+                </li>
+                <li class="nav-item "><a class="link-secondary text-light nav-link" nav-link active href="">Contacto</a>
+                </li>
+            </ul>
+            <span class="me-5" id="derechos">Todos los Derechos Reservados 2022 ©</span>
+        </nav>
+    </footer>
+    <!-- Boostrap javascript Bundle with Popper desde CDN -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

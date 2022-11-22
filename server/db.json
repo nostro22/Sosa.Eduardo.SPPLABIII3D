@@ -1,0 +1,314 @@
+{
+  "animales": [
+    {
+      "id": 4,
+      "titulo": "Greater kudu",
+      "transaccion": "gato",
+      "descripcion": "Goldenrod",
+      "precio": "4894.18",
+      "raza": "Tragelaphus strepsiceros",
+      "fecha": "2022-09-25",
+      "vacuna": "si"
+    },
+    {
+      "id": 5,
+      "titulo": "Dove, white-winged",
+      "transaccion": "perro",
+      "descripcion": "Teal",
+      "precio": "1437.9",
+      "raza": "Zenaida asiatica",
+      "fecha": "2022-07-10",
+      "vacuna": "si"
+    },
+    {
+      "id": 6,
+      "titulo": "Colobus, magistrate black",
+      "transaccion": "perro",
+      "descripcion": "Mauv",
+      "precio": "1305.38",
+      "raza": "Colobus guerza",
+      "fecha": "2022-09-21",
+      "vacuna": "no"
+    },
+    {
+      "id": 7,
+      "titulo": "Blue-footed booby",
+      "transaccion": "perro",
+      "descripcion": "Pink",
+      "precio": "206.71",
+      "raza": "Sula nebouxii",
+      "fecha": "2022-09-27",
+      "vacuna": "si"
+    },
+    {
+      "id": 8,
+      "titulo": "Grizzly bear",
+      "transaccion": "perro",
+      "descripcion": "Yellow",
+      "precio": "1930.88",
+      "raza": "Ursus arctos",
+      "fecha": "2022-08-19",
+      "vacuna": "si"
+    },
+    {
+      "id": 9,
+      "titulo": "Greater flamingo",
+      "transaccion": "perro",
+      "descripcion": "Crimson",
+      "precio": "4903.11",
+      "raza": "Phoenicopterus ruber",
+      "fecha": "2022-01-12",
+      "vacuna": "no"
+    },
+    {
+      "id": 10,
+      "titulo": "Tawny eagle",
+      "transaccion": "perro",
+      "descripcion": "Yellow",
+      "precio": "3928.62",
+      "raza": "Anitibyx armatus",
+      "fecha": "2022-01-15",
+      "vacuna": "no"
+    },
+    {
+      "id": 11,
+      "titulo": "African jacana",
+      "transaccion": "perro",
+      "descripcion": "Purple",
+      "precio": "1048.08",
+      "raza": "Actophilornis africanus",
+      "fecha": "2022-05-20",
+      "vacuna": "no"
+    },
+    {
+      "id": 12,
+      "titulo": "Agama lizard (unidentified)",
+      "transaccion": "perro",
+      "descripcion": "Yellow",
+      "precio": "4787.43",
+      "raza": "Agama sp.",
+      "fecha": "2022-04-16",
+      "vacuna": "si"
+    },
+    {
+      "id": 13,
+      "titulo": "African wild dog",
+      "transaccion": "perro",
+      "descripcion": "Khaki",
+      "precio": "474.42",
+      "raza": "Lycaon pictus",
+      "fecha": "2022-06-07",
+      "vacuna": "no"
+    },
+    {
+      "id": 14,
+      "titulo": "White-mantled colobus",
+      "transaccion": "perro",
+      "descripcion": "Red",
+      "precio": "215.92",
+      "raza": "Colobus guerza",
+      "fecha": "2022-06-11",
+      "vacuna": "si"
+    },
+    {
+      "id": 15,
+      "titulo": "Woodrat (unidentified)",
+      "transaccion": "perro",
+      "descripcion": "Indigo",
+      "precio": "3776.77",
+      "raza": "Neotoma sp.",
+      "fecha": "2022-09-02",
+      "vacuna": "si"
+    },
+    {
+      "id": 16,
+      "titulo": "Common melba finch",
+      "transaccion": "perro",
+      "descripcion": "Purple",
+      "precio": "1899.69",
+      "raza": "Pytilia melba",
+      "fecha": "2022-09-16",
+      "vacuna": "si"
+    },
+    {
+      "id": 17,
+      "titulo": "Western lowland gorilla",
+      "transaccion": "perro",
+      "descripcion": "Khaki",
+      "precio": "1941.27",
+      "raza": "Gorilla gorilla",
+      "fecha": "2022-03-10",
+      "vacuna": "no"
+    },
+    {
+      "id": 18,
+      "titulo": "Cormorant, flightless",
+      "transaccion": "perro",
+      "descripcion": "Pink",
+      "precio": "1369.3",
+      "raza": "Nannopterum harrisi",
+      "fecha": "2022-07-22",
+      "vacuna": "no"
+    },
+    {
+      "id": 19,
+      "titulo": "Bent-toed gecko",
+      "transaccion": "perro",
+      "descripcion": "Goldenrod",
+      "precio": "4900.56",
+      "raza": "Cyrtodactylus louisiadensis",
+      "fecha": "2022-05-14",
+      "vacuna": "no"
+    },
+    {
+      "id": 20,
+      "titulo": "Savannah deer (unidentified)",
+      "transaccion": "perro",
+      "descripcion": "Blue",
+      "precio": "2232.15",
+      "raza": "unavailable",
+      "fecha": "2022-01-26",
+      "vacuna": "no"
+    },
+    {
+      "id": 21,
+      "titulo": "Crowned eagle",
+      "transaccion": "perro",
+      "descripcion": "Teal",
+      "precio": "3652.01",
+      "raza": "Spizaetus coronatus",
+      "fecha": "2022-09-28",
+      "vacuna": "si"
+    },
+    {
+      "id": 22,
+      "titulo": "Prairie falcon",
+      "transaccion": "perro",
+      "descripcion": "Teal",
+      "precio": "1480.89",
+      "raza": "Falco mexicanus",
+      "fecha": "2022-01-18",
+      "vacuna": "si"
+    },
+    {
+      "id": 23,
+      "titulo": "Civet cat",
+      "transaccion": "perro",
+      "descripcion": "Yellow",
+      "precio": "2000.97",
+      "raza": "Bassariscus astutus",
+      "fecha": "2022-10-24",
+      "vacuna": "no"
+    },
+    {
+      "id": 24,
+      "titulo": "Blue and gold macaw",
+      "transaccion": "perro",
+      "descripcion": "Aquamarine",
+      "precio": "2195.82",
+      "raza": "Ara ararauna",
+      "fecha": "2022-08-21",
+      "vacuna": "si"
+    },
+    {
+      "id": 25,
+      "titulo": "Large-eared bushbaby",
+      "transaccion": "perro",
+      "descripcion": "Green",
+      "precio": "348.47",
+      "raza": "Galago crassicaudataus",
+      "fecha": "2022-06-20",
+      "vacuna": "si"
+    },
+    {
+      "id": 26,
+      "titulo": "Scarlet macaw",
+      "transaccion": "perro",
+      "descripcion": "Maroon",
+      "precio": "2745.08",
+      "raza": "Ara macao",
+      "fecha": "2022-07-11",
+      "vacuna": "no"
+    },
+    {
+      "id": 27,
+      "titulo": "Cape wild cat",
+      "transaccion": "perro",
+      "descripcion": "Yellow",
+      "precio": "364.85",
+      "raza": "Felis libyca",
+      "fecha": "2022-09-25",
+      "vacuna": "si"
+    },
+    {
+      "id": 28,
+      "titulo": "Grebe, little",
+      "transaccion": "perro",
+      "descripcion": "Green",
+      "precio": "26.86",
+      "raza": "Tachybaptus ruficollis",
+      "fecha": "2022-10-11",
+      "vacuna": "no"
+    },
+    {
+      "id": 29,
+      "titulo": "Grebe, little",
+      "transaccion": "perro",
+      "descripcion": "Green",
+      "precio": "26.86",
+      "raza": "Tachybaptus ruficollis",
+      "fecha": "2022-10-11",
+      "vacuna": "no"
+    },
+    {
+      "id": 30,
+      "titulo": "atico",
+      "transaccion": "perro",
+      "descripcion": "mastin lindo",
+      "precio": "300",
+      "raza": "fetch",
+      "fecha": "3333-03-31",
+      "vacuna": "si"
+    },
+    {
+      "id": 31,
+      "titulo": "perro",
+      "transaccion": "perro",
+      "descripcion": "mastin lindo",
+      "precio": "120",
+      "raza": "golden",
+      "fecha": "2022-11-03",
+      "vacuna": "si"
+    },
+    {
+      "id": 33,
+      "titulo": "perro",
+      "transaccion": "perro",
+      "descripcion": "gatito bebe",
+      "precio": "2000",
+      "raza": "bebe",
+      "fecha": "2222-02-22",
+      "vacuna": "si"
+    },
+    {
+      "id": 34,
+      "titulo": "casa grande",
+      "transaccion": "perro",
+      "descripcion": "casa grande ",
+      "precio": "2006",
+      "raza": "Ara chloroptera",
+      "fecha": "2022-11-02",
+      "vacuna": "si"
+    },
+    {
+      "id": 35,
+      "titulo": "casa grande",
+      "transaccion": "perro",
+      "descripcion": "mastin lindo",
+      "precio": "2000",
+      "raza": "mastin",
+      "fecha": "0066-06-06",
+      "vacuna": "si"
+    }
+  ]
+}
